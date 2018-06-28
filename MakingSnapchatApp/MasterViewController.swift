@@ -8,28 +8,64 @@
 
 import MakingSnapchatNavigation
 
-class MasterViewController: UIViewController {
+class MasterViewController: SnapchatNavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
+        let camera = CameraViewController()
+        setBackground(vc: camera)
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+        var vcs: [UIViewController] = []
 
-    /*
-    // MARK: - Navigation
+        // First empty view
+        var stub = UIViewController()
+        stub.view.backgroundColor = .clear
+        vcs.append(stub)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        // Second view with scroll on it
+        stub = UIViewController()
+        stub.view.backgroundColor = .clear
+
+        // Scroll view content size
+        let topInset: CGFloat = 60
+        let sideInset: CGFloat = 8
+        let contentHeight = UIScreen.main.bounds.size.height * 2
+        let contentWidth = UIScreen.main.bounds.size.width - (sideInset * 2)
+
+
+        // Configure scroll view
+        let scroll = UIScrollView()
+        scroll.backgroundColor = .clear
+        scroll.contentSize.height = contentHeight
+        scroll.contentSize.width = contentWidth
+        scroll.contentInset = UIEdgeInsetsMake(topInset, sideInset, 0, sideInset)
+        scroll.contentOffset = CGPoint(x: 0, y: -topInset)
+        stub.view.addSubview(scroll)
+        // Scroll view constraints
+        scroll.translatesAutoresizingMaskIntoConstraints = false
+        scroll.topAnchor.constraint(equalTo: stub.view.topAnchor).isActive = true
+        scroll.bottomAnchor.constraint(equalTo: stub.view.bottomAnchor).isActive = true
+        scroll.leftAnchor.constraint(equalTo: stub.view.leftAnchor).isActive = true
+        scroll.rightAnchor.constraint(equalTo: stub.view.rightAnchor).isActive = true
+
+        // Configure content view
+        let content = GradientView()
+        content.backgroundColor = .white
+        content.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        content.layer.cornerRadius = 20
+        content.layer.masksToBounds = true
+        content.layer.applySketchShadow(alpha: 0.3, y: 0, blur: 10)
+        scroll.addSubview(content)
+        // Content view constraints
+        content.translatesAutoresizingMaskIntoConstraints = false
+        content.heightAnchor.constraint(equalToConstant: contentHeight * 1.5).isActive = true
+        content.widthAnchor.constraint(equalToConstant: contentWidth).isActive = true
+
+        vcs.append(stub)
+
+        setViewControllers(vcs: vcs)
+
     }
-    */
 
 }

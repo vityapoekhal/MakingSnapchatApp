@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E5ACF2320E4E6280015362E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5ACF2220E4E6280015362E /* CameraViewController.swift */; };
+		0E5ACF2520E4E6690015362E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5ACF2420E4E6690015362E /* GradientView.swift */; };
+		0E5ACF2720E4E6AA0015362E /* SnapchatNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5ACF2620E4E6AA0015362E /* SnapchatNavigationController.swift */; };
+		0E5ACF2920E4E83E0015362E /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5ACF2820E4E83E0015362E /* CALayer.swift */; };
 		0E8F237E20E3C362006DD3D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8F237D20E3C362006DD3D8 /* AppDelegate.swift */; };
 		0E8F238520E3C364006DD3D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E8F238420E3C364006DD3D8 /* Assets.xcassets */; };
 		0E8F238820E3C364006DD3D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E8F238620E3C364006DD3D8 /* LaunchScreen.storyboard */; };
@@ -41,6 +45,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E5ACF2220E4E6280015362E /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		0E5ACF2420E4E6690015362E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		0E5ACF2620E4E6AA0015362E /* SnapchatNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapchatNavigationController.swift; sourceTree = "<group>"; };
+		0E5ACF2820E4E83E0015362E /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
 		0E8F237A20E3C362006DD3D8 /* MakingSnapchatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakingSnapchatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8F237D20E3C362006DD3D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E8F238420E3C364006DD3D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,6 +102,8 @@
 			children = (
 				0E8F237D20E3C362006DD3D8 /* AppDelegate.swift */,
 				0E8F23A120E3C622006DD3D8 /* MasterViewController.swift */,
+				0E5ACF2220E4E6280015362E /* CameraViewController.swift */,
+				0E5ACF2420E4E6690015362E /* GradientView.swift */,
 				0E8F238420E3C364006DD3D8 /* Assets.xcassets */,
 				0E8F238620E3C364006DD3D8 /* LaunchScreen.storyboard */,
 				0E8F238920E3C364006DD3D8 /* Info.plist */,
@@ -104,6 +114,8 @@
 		0E8F239520E3C3C1006DD3D8 /* MakingSnapchatNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				0E5ACF2620E4E6AA0015362E /* SnapchatNavigationController.swift */,
+				0E5ACF2820E4E83E0015362E /* CALayer.swift */,
 				0E8F239620E3C3C2006DD3D8 /* MakingSnapchatNavigation.h */,
 				0E8F239720E3C3C2006DD3D8 /* Info.plist */,
 			);
@@ -176,6 +188,7 @@
 					};
 					0E8F239320E3C3C1006DD3D8 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -224,6 +237,8 @@
 			files = (
 				0E8F23A220E3C622006DD3D8 /* MasterViewController.swift in Sources */,
 				0E8F237E20E3C362006DD3D8 /* AppDelegate.swift in Sources */,
+				0E5ACF2520E4E6690015362E /* GradientView.swift in Sources */,
+				0E5ACF2320E4E6280015362E /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +246,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E5ACF2720E4E6AA0015362E /* SnapchatNavigationController.swift in Sources */,
+				0E5ACF2920E4E83E0015362E /* CALayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +390,7 @@
 		0E8F238D20E3C364006DD3D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K74P69TJH6;
@@ -391,6 +409,7 @@
 		0E8F238E20E3C364006DD3D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K74P69TJH6;
@@ -409,6 +428,7 @@
 		0E8F239E20E3C3C2006DD3D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -427,6 +447,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.victor-hyde-code.MakingSnapchatNavigation";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -437,6 +458,7 @@
 		0E8F239F20E3C3C2006DD3D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
