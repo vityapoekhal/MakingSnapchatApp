@@ -2,11 +2,11 @@
 //  CALayer.swift
 //  MakingSnapchatNavigation
 //
-//  Created by Victor Hyde on 28/06/2018.
+//  Created by Victor Hyde on 26/06/2018.
 //  Copyright © 2018 Victor Hyde Code. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 extension CALayer {
 

@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0810C720E6384400ACC68C /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0810BF20E6384300ACC68C /* CALayer.swift */; };
+		0E0810C820E6384400ACC68C /* TransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0810C120E6384300ACC68C /* TransitionAnimation.swift */; };
+		0E0810C920E6384400ACC68C /* AnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0810C220E6384300ACC68C /* AnimatedTransitioning.swift */; };
+		0E0810CA20E6384400ACC68C /* PercentDrivenInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0810C420E6384300ACC68C /* PercentDrivenInteractiveTransition.swift */; };
+		0E0810CB20E6384400ACC68C /* CustomControllerContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0810C520E6384300ACC68C /* CustomControllerContext.swift */; };
+		0E0810CC20E6384400ACC68C /* CustomSwipeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0810C620E6384300ACC68C /* CustomSwipeInteractor.swift */; };
 		0E5ACF2320E4E6280015362E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5ACF2220E4E6280015362E /* CameraViewController.swift */; };
 		0E5ACF2520E4E6690015362E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5ACF2420E4E6690015362E /* GradientView.swift */; };
 		0E5ACF2720E4E6AA0015362E /* SnapchatNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5ACF2620E4E6AA0015362E /* SnapchatNavigationController.swift */; };
-		0E5ACF2920E4E83E0015362E /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5ACF2820E4E83E0015362E /* CALayer.swift */; };
 		0E8F237E20E3C362006DD3D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8F237D20E3C362006DD3D8 /* AppDelegate.swift */; };
 		0E8F238520E3C364006DD3D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E8F238420E3C364006DD3D8 /* Assets.xcassets */; };
 		0E8F238820E3C364006DD3D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E8F238620E3C364006DD3D8 /* LaunchScreen.storyboard */; };
@@ -45,10 +50,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E0810BF20E6384300ACC68C /* CALayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
+		0E0810C120E6384300ACC68C /* TransitionAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimation.swift; sourceTree = "<group>"; };
+		0E0810C220E6384300ACC68C /* AnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedTransitioning.swift; sourceTree = "<group>"; };
+		0E0810C420E6384300ACC68C /* PercentDrivenInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentDrivenInteractiveTransition.swift; sourceTree = "<group>"; };
+		0E0810C520E6384300ACC68C /* CustomControllerContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomControllerContext.swift; sourceTree = "<group>"; };
+		0E0810C620E6384300ACC68C /* CustomSwipeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSwipeInteractor.swift; sourceTree = "<group>"; };
 		0E5ACF2220E4E6280015362E /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		0E5ACF2420E4E6690015362E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		0E5ACF2620E4E6AA0015362E /* SnapchatNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapchatNavigationController.swift; sourceTree = "<group>"; };
-		0E5ACF2820E4E83E0015362E /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
 		0E8F237A20E3C362006DD3D8 /* MakingSnapchatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakingSnapchatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8F237D20E3C362006DD3D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E8F238420E3C364006DD3D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +89,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E0810BE20E6384300ACC68C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0E0810BF20E6384300ACC68C /* CALayer.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0E0810C020E6384300ACC68C /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				0E0810C120E6384300ACC68C /* TransitionAnimation.swift */,
+				0E0810C220E6384300ACC68C /* AnimatedTransitioning.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		0E0810C320E6384300ACC68C /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				0E0810C420E6384300ACC68C /* PercentDrivenInteractiveTransition.swift */,
+				0E0810C520E6384300ACC68C /* CustomControllerContext.swift */,
+				0E0810C620E6384300ACC68C /* CustomSwipeInteractor.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
 		0E8F237120E3C362006DD3D8 = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +152,9 @@
 			isa = PBXGroup;
 			children = (
 				0E5ACF2620E4E6AA0015362E /* SnapchatNavigationController.swift */,
-				0E5ACF2820E4E83E0015362E /* CALayer.swift */,
+				0E0810C020E6384300ACC68C /* Animation */,
+				0E0810BE20E6384300ACC68C /* Extensions */,
+				0E0810C320E6384300ACC68C /* Transition */,
 				0E8F239620E3C3C2006DD3D8 /* MakingSnapchatNavigation.h */,
 				0E8F239720E3C3C2006DD3D8 /* Info.plist */,
 			);
@@ -246,8 +285,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E0810C720E6384400ACC68C /* CALayer.swift in Sources */,
 				0E5ACF2720E4E6AA0015362E /* SnapchatNavigationController.swift in Sources */,
-				0E5ACF2920E4E83E0015362E /* CALayer.swift in Sources */,
+				0E0810C920E6384400ACC68C /* AnimatedTransitioning.swift in Sources */,
+				0E0810CC20E6384400ACC68C /* CustomSwipeInteractor.swift in Sources */,
+				0E0810C820E6384400ACC68C /* TransitionAnimation.swift in Sources */,
+				0E0810CA20E6384400ACC68C /* PercentDrivenInteractiveTransition.swift in Sources */,
+				0E0810CB20E6384400ACC68C /* CustomControllerContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
