@@ -1,6 +1,6 @@
 # MakingSnapchatApp
 
-[Related tutorial on Habr](https://habr.com/post/415795/)
+The repository contains the source code from the [article](https://habr.com/post/415795/)
 
 Репозиторий содержит исходный код из [статьи](https://habr.com/post/415795/)
 
